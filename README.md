@@ -8,6 +8,7 @@ This app is a boon for current students of schools,colleges and universities in 
 ability to maintain and keep track of their own attendence system.
 
 Concepts: 
+
 activity, service, broadcast receiver, content provider, intent, AndroidManifest
 
 Link for a powerpoint presentation:
