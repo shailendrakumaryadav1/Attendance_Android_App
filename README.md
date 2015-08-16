@@ -12,7 +12,7 @@ Concepts:
 activity, service, broadcast receiver, content provider, intent, AndroidManifest
 
 Link for a powerpoint presentation:
-
+https://drive.google.com/file/d/0BzQ7LutOibcaeHp1ZndtVVQ1aEU/view?usp=sharing
 
 Contact information:
 Connect me on my email id at shailendra220893@gmail.com or https://in.linkedin.com/in/shailendrakumaryadav1
