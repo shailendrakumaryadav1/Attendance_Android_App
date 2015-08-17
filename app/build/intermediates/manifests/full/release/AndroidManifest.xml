@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sky.attendance"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/attendance_icon"
+        android:label="Attendance"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sky.attendance.MainActivity"
+            android:label="Attendance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.sky.attendance.displaycurrentattendancejava"
+            android:icon="@drawable/attendance_icon"
+            android:label="Attendance"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.sky.attendance.loginjava"
+            android:label="Attendance3" />
+        <activity
+            android:name="com.example.sky.attendance.inputsubjectjava"
+            android:label="Subject Details" >
+        </activity>
+        <activity
+            android:name="com.example.sky.attendance.inputsubjectnamejava"
+            android:label="Subject Names" />
+        <activity
+            android:name="com.example.sky.attendance.enterdatejava"
+            android:label="Date Settings" />
+        <activity
+            android:name="com.example.sky.attendance.inputinitialattendancejava"
+            android:label="Base Attendance" />
+        <activity
+            android:name="com.example.sky.attendance.displaypercentattendancejava"
+            android:label="Finish and hola!..done!!!" />
+        <activity
+            android:name="com.example.sky.attendance.showcurrentattendancepercentjava"
+            android:label="Details" />
+        <activity
+            android:name="com.example.sky.attendance.updatesubjectjava"
+            android:label="Update Subject Details" />
+        <activity
+            android:name="com.example.sky.attendance.updatepersonaldetailsjava"
+            android:label="Update Personal Details" />
+        <activity
+            android:name="com.example.sky.attendance.addsubjectjava"
+            android:icon="@drawable/ic_action_add_to_queue"
+            android:label="Add Subject" />
+        <activity
+            android:name="com.example.sky.attendance.removesubjectjava"
+            android:icon="@drawable/ic_action_delete"
+            android:label="Remove Subject" />
+        <activity
+            android:name="com.example.sky.attendance.notificationsettingsjava"
+            android:label="Notification Settings" />
+
+        <service
+            android:name="com.example.sky.attendance.notification1"
+            android:enabled="true" />
+
+        <receiver android:name="com.example.sky.attendance.notificationreceiverjava" />
+    </application>
+
+</manifest>
