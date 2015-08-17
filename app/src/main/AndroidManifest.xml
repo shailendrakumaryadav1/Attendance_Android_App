@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sky.attendance" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/attendance_icon"
+        android:label="Attendance"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Attendance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".displaycurrentattendancejava"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:icon="@drawable/attendance_icon"
+            android:label="Attendance">
+
+        </activity>
+
+
+        <activity
+            android:name=".loginjava"
+            android:label="Attendance3"
+
+            />
+        <activity
+            android:name=".inputsubjectjava"
+            android:label="Subject Details">
+        </activity>
+        <activity
+            android:name=".inputsubjectnamejava"
+            android:label="Subject Names"
+            />
+        <activity
+            android:name=".enterdatejava"
+            android:label="Date Settings"
+            />
+        <activity
+            android:name=".inputinitialattendancejava"
+            android:label="Base Attendance"
+            />
+        <activity
+            android:name=".displaypercentattendancejava"
+            android:label="Finish and hola!..done!!!"
+            />
+        <activity
+            android:name=".showcurrentattendancepercentjava"
+            android:label="Details"
+            />
+        <activity
+            android:name=".updatesubjectjava"
+            android:label="Update Subject Details"
+            />
+        <activity
+            android:name=".updatepersonaldetailsjava"
+            android:label="Update Personal Details"
+            />
+
+        <activity
+            android:name=".addsubjectjava"
+            android:label="Add Subject"
+            android:icon="@drawable/ic_action_add_to_queue"
+            />
+        <activity
+            android:name=".removesubjectjava"
+            android:label="Remove Subject"
+            android:icon="@drawable/ic_action_delete"
+            />
+        <activity
+            android:name=".notificationsettingsjava"
+            android:label="Notification Settings"
+
+            />
+
+
+        <service android:name=".notification1"
+            android:enabled="true" />
+
+        <receiver android:name=".notificationreceiverjava"/>
+
+
+    </application>
+
+</manifest>
