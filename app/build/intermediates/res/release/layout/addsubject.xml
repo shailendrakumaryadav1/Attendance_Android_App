@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#ff94faff"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#00ff00"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:text="Enter the Details of Subject to be Added.
+        Choose the Date past which you know your Present/Total Attendance in the Subject"
+        android:layout_margin="5dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+
+
+        >
+        <EditText
+            android:id="@+id/sn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center_horizontal"
+            android:hint="Subject"
+            android:textColor="#0000ff"
+            android:textColorHint="#678765"
+            android:maxLength="15"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_format"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+        <Button
+            android:id="@+id/sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="#fffcff83"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+
+        >
+        <EditText
+            android:id="@+id/sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColor="#0000ff"
+            android:hint="Present (0)"
+            android:textColorHint="#678765"
+            android:background="@drawable/button_format"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="/"/>
+        <EditText
+            android:id="@+id/st"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:maxLength="6"
+            android:inputType="number"
+            android:textColor="#0000ff"
+            android:hint="Total (0)"
+            android:textColorHint="#678765"
+            android:background="@drawable/button_format"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/continue_button"
+        android:text="Add"
+
+        />
+
+</LinearLayout>
+</ScrollView><!-- From: file:/C:/Users/SKY/AndroidStudioProjects/Attendance/app/src/main/res/layout/addsubject.xml -->

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/background"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="25"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:ems="10"
+            android:layout_gravity="center_horizontal"
+            android:lines="1"
+            android:textColor="#000000"
+            android:background="#ff2cfffd"
+            />
+
+        <ImageButton
+            android:id="@+id/cont"
+            android:layout_width="224dp"
+            android:layout_height="92dp"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/continue_button"
+            android:layout_gravity="center"
+            android:onClick="setDate"
+            android:clickable="true"
+            android:text="continue"
+
+
+
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="center_horizontal" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:layout_gravity="center_horizontal" />
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+    </DatePicker>
+</LinearLayout>
+<!-- From: file:/C:/Users/SKY/AndroidStudioProjects/Attendance/app/src/main/res/layout/login.xml -->
