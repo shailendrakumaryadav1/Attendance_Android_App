@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:text="@string/subjmsg"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#ff00ff"
+        />
+
+    <Spinner
+        android:id="@+id/noofsubj"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#839DFF"
+        android:entries="@array/noofsubject"
+        android:prompt="@string/subjmsg"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+
+
+
+    <Button
+        android:id="@+id/btnSubjSubmit"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit"
+        />
+
+
+
+
+
+</LinearLayout><!-- From: file:/C:/Users/SKY/AndroidStudioProjects/Attendance/app/src/main/res/layout/inputsubject.xml -->
